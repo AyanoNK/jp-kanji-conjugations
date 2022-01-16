@@ -8,8 +8,11 @@ import {
   Button,
   Image,
   useDisclosure,
+  Link,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+
+import NextLink from "next/link";
 
 // Update: Check these awesome headers from Choc UI 👇
 // https://choc-ui.tech/docs/elements/headers
@@ -31,7 +34,11 @@ const Header = (props) => {
     >
       <Flex align="center" mr={5}>
         <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-          <Image src="/logo.webp" h="2.5em" alt="Dan Abramov" />
+          <NextLink href="/" passHref>
+            <Link>
+              <Image src="/logo.webp" h="2.5em" alt="Dan Abramov" />
+            </Link>
+          </NextLink>
         </Heading>
       </Flex>
 
@@ -49,18 +56,6 @@ const Header = (props) => {
       >
         <Text>ニャ</Text>
       </Stack>
-
-      <Box
-        display={{ base: isOpen ? "block" : "none", md: "block" }}
-        mt={{ base: 4, md: 0 }}
-      >
-        <Button
-          variant="outline"
-          _hover={{ bg: "teal.700", borderColor: "teal.700" }}
-        >
-          Create account
-        </Button>
-      </Box>
     </Flex>
   );
 };
