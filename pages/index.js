@@ -75,6 +75,7 @@ export default function Home() {
         >
           API
         </a>
+        <Link href="/credits">クレジット</Link>
       </footer>
     </div>
   );
