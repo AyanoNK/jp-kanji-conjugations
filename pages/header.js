@@ -6,6 +6,7 @@ import {
   Flex,
   Text,
   Button,
+  Image,
   useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
@@ -22,14 +23,15 @@ const Header = (props) => {
       align="center"
       justify="space-between"
       wrap="wrap"
-      padding={6}
+      padding={3}
+      h="10vh"
       bg="teal.500"
       color="white"
       {...props}
     >
       <Flex align="center" mr={5}>
         <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-          Chakra UI
+          <Image src="/logo.webp" h="2.5em" alt="Dan Abramov" />
         </Heading>
       </Flex>
 
@@ -45,9 +47,7 @@ const Header = (props) => {
         flexGrow={1}
         mt={{ base: 4, md: 0 }}
       >
-        <Text>Docs</Text>
-        <Text>Examples</Text>
-        <Text>Blog</Text>
+        <Text>ニャ</Text>
       </Stack>
 
       <Box
