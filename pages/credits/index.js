@@ -73,7 +73,7 @@ export default function FirstPost() {
                   </Text>
                   <List pl={7} pt={3} spacing={2}>
                     {row.links.map((link) => (
-                      <ListItem>
+                      <ListItem key={link.key}>
                         <Text fontSize="lg">
                           <Link href={link.url} isExternal>
                             <ExternalLinkIcon color="green.500" /> {link.title}
