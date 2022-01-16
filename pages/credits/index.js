@@ -25,8 +25,25 @@ export default function FirstPost() {
       links: [
         {
           id: "1.1",
+          title: "Website",
+          url: "https://blindblakedown.wixsite.com/tochihata-guiter",
+        },
+        {
+          id: "1.2",
           title: "Instagram",
           url: "https://www.instagram.com/neko.dearu/",
+        },
+      ],
+    },
+    {
+      id: "2",
+      item: "Kanji Documentation",
+      who: "Kanji Alive",
+      links: [
+        {
+          id: "2.1",
+          title: "Website",
+          url: "https://app.kanjialive.com/api/docs",
         },
       ],
     },
@@ -54,7 +71,7 @@ export default function FirstPost() {
                     <ListIcon as={ArrowForwardIcon} color="green.500" />
                     {row.item} <ChevronRightIcon /> {row.who}
                   </Text>
-                  <List pl={7} pt={2} spacing={3}>
+                  <List pl={7} pt={3} spacing={2}>
                     {row.links.map((link) => (
                       <ListItem>
                         <Text fontSize="lg">
