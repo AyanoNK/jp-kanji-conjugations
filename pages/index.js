@@ -59,6 +59,13 @@ export default function Home() {
         >
           例
         </a>
+        <a
+          href="https://github.com/AyanoNK/jp-kanji-conjugations"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          リポジトリ
+        </a>
       </footer>
     </div>
   );
