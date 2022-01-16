@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,10 +15,12 @@ export default function Home() {
         <h1 className={styles.title}>日本語の漢字練習</h1>
 
         <div className={styles.grid}>
-          <a className={styles.card}>
-            <h2>開発中で</h2>
-            <p>ニャ。</p>
-          </a>
+          <Link href="/posts/first-post">
+            <a className={styles.card}>
+              <h2>開発中で</h2>
+              <p>ニャ。</p>
+            </a>
+          </Link>
 
           <a className={styles.card}>
             <h2>開発中で</h2>
@@ -65,6 +68,14 @@ export default function Home() {
         >
           リポジトリ
         </a>
+        <a
+          href="https://app.kanjialive.com/api/docs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          API
+        </a>
+        <Link href="/credits">クレジット</Link>
       </footer>
     </div>
   );
