@@ -42,7 +42,6 @@ const Footer = () => {
     <footer className={styles.footer}>
       <Box
         w="100%"
-        minH="5vh"
         display="flex"
         justifyContent="center"
         alignItems="center"
@@ -66,7 +65,6 @@ const Footer = () => {
           <StackItem key={rows.length + 1}>
             <NextLink href="/credits" passHref>
               <Link
-                isExternal
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
