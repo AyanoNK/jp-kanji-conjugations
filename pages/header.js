@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Stack,
-  Heading,
-  Flex,
-  Text,
-  Button,
-  Image,
-  useDisclosure,
-  Link,
-} from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { Stack, Heading, Flex, Text, Image, Link } from "@chakra-ui/react";
 
 import NextLink from "next/link";
 
