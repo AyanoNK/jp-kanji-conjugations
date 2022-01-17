@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Footer from "./footer";
 
 export default function Home() {
   return (
@@ -39,44 +40,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/docs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ドキュメント
-        </a>
-        <a
-          href="https://nextjs.org/learn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          学ぶ
-        </a>
-        <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          例
-        </a>
-        <a
-          href="https://github.com/AyanoNK/jp-kanji-conjugations"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          リポジトリ
-        </a>
-        <a
-          href="https://app.kanjialive.com/api/docs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          API
-        </a>
-        <Link href="/credits">クレジット</Link>
-      </footer>
+      <Footer />
     </div>
   );
 }
