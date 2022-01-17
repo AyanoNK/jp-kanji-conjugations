@@ -1,24 +1,13 @@
 import React from "react";
-import {
-  Box,
-  Stack,
-  Heading,
-  Flex,
-  Text,
-  Button,
-  Image,
-  useDisclosure,
-  Link,
-} from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { Stack, Heading, Flex, Text, Image, Link } from "@chakra-ui/react";
 
 import NextLink from "next/link";
 
 // Update: Check these awesome headers from Choc UI 👇
 // https://choc-ui.tech/docs/elements/headers
 const Header = (props) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const handleToggle = () => (isOpen ? onClose() : onOpen());
+  // const { isOpen, onOpen, onClose } = useDisclosure();
+  // const handleToggle = () => (isOpen ? onClose() : onOpen());
 
   return (
     <Flex
@@ -42,13 +31,14 @@ const Header = (props) => {
         </Heading>
       </Flex>
 
-      <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
+      {/* <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
         <HamburgerIcon />
-      </Box>
+      </Box> */}
 
       <Stack
         direction={{ base: "column", md: "row" }}
-        display={{ base: isOpen ? "block" : "none", md: "flex" }}
+        // display={{ base: isOpen ? "block" : "none", md: "flex" }}
+        display={{ base: "none", md: "flex" }}
         width={{ base: "full", md: "auto" }}
         alignItems="center"
         flexGrow={1}
