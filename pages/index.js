@@ -8,7 +8,7 @@ export default function Home() {
   const cards = [
     {
       id: 1,
-      title: "開発中で",
+      title: "辞書形式の練習",
       description: "ニャ。",
       link: "/dictionary-form/test",
     },
