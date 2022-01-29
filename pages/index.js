@@ -46,6 +46,9 @@ export default function Home() {
                 lineHeight="1.15"
                 fontSize="4rem"
                 textAlign="center"
+                _hover={{
+                  color: "blue.700",
+                }}
               >
                 日本語の漢字練習
               </Text>
