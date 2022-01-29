@@ -1,12 +1,29 @@
 import { Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 
-const SelectionCard = ({ link, title, content, isExternal = false }) => {
+const SelectionCard = ({ link, title, description, isExternal = false }) => {
   return (
     <NextLink href={link} passHref>
-      <Link isExternal={isExternal}>
-        <Text>{title}</Text>
-        <Text>{content}</Text>
+      <Link
+        // TODO: change color to use theme
+        border="1px solid black"
+        borderRadius="md"
+        padding="1.5rem"
+        width="50%"
+        textDecoration="none"
+        transition={["ease-in-out", "0.15s"]}
+        _hover={{
+          color: "red.500",
+          borderColor: "red.500",
+        }}
+        isExternal={isExternal}
+      >
+        <Text paddingBottom="1rem" fontSize="1.5rem">
+          {title}
+        </Text>
+        <Text margin="0" padding="0" fontSize="1.25rem" lineHeight="1.5">
+          {description}
+        </Text>
       </Link>
     </NextLink>
   );
