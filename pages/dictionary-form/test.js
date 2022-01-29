@@ -6,6 +6,7 @@ import {
   Link,
   SimpleGrid,
   Text,
+  Tooltip,
 } from "@chakra-ui/react";
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
@@ -43,24 +44,24 @@ export default function Home() {
             </Text>
             <ArrowBackIcon color="green.500" fontSize="4rem" />
             <ArrowForwardIcon color="green.500" fontSize="4rem" />
-            <Text margin="0" lineHeight="1.15" fontSize="4rem">
-              辞書形式
-            </Text>
+            <Tooltip label="「じしょ けいしき の れんしゅう」" placement="top">
+              <Text
+                margin="0"
+                lineHeight="1.15"
+                fontSize="4rem"
+                _hover={{
+                  color: "blue.700",
+                }}
+              >
+                辞書形式
+              </Text>
+            </Tooltip>
           </HStack>
-          <Text
-            margin="0"
-            lineHeight="1.15"
-            fontSize="1.25rem"
-            align="center"
-            _hover={{
-              color: "blue.700",
-            }}
-          >
-            「じしょ けいしき の れんしゅう」
-          </Text>
-          <Text margin="0" lineHeight="1.15" fontSize="1.5rem" align="center">
-            開発中で
-          </Text>
+          <Tooltip label="「かいはつちゅうで」" placement="top">
+            <Text margin="0" lineHeight="1.15" fontSize="1.5rem" align="center">
+              開発中で
+            </Text>
+          </Tooltip>
           <NextLink href="/" passHref>
             <Link
               _hover={{

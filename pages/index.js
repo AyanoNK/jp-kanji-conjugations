@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Container, SimpleGrid, Text } from "@chakra-ui/react";
+import { Container, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 import SelectionCard from "../components/index/SelectionCard";
 
 export default function Home() {
@@ -40,15 +40,16 @@ export default function Home() {
           flexDirection={defaultDirection}
         >
           <SimpleGrid columns={1} spacingY="3rem" autoColumns>
-            <Text
-              margin="0"
-              lineHeight="1.15"
-              fontSize="4rem"
-              textAlign="center"
-            >
-              日本語の漢字練習
-            </Text>
-
+            <Tooltip label="「にほんごのかんじれいしゅう」" placement="top">
+              <Text
+                margin="0"
+                lineHeight="1.15"
+                fontSize="4rem"
+                textAlign="center"
+              >
+                日本語の漢字練習
+              </Text>
+            </Tooltip>
             <SimpleGrid
               columns={[1, 1, 2, 2, 2]}
               spacingX="1rem"
