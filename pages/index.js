@@ -1,11 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import Footer from "./footer";
+import { Box, Container } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Container maxW="8xl">
       <Head>
         <title>漢字練習</title>
         <meta name="description" content="日本語の漢字練習" />
@@ -39,6 +39,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-    </div>
+    </Container>
   );
 }
