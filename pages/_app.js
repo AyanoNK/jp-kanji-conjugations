@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Flex direction="column" minH="100vh" justifyContent="space-between">
         <Header />
-        <Box display="flex">
+        <Box py={["3rem", "3rem", 0, 0, 0]}>
           <Component {...pageProps} theme={theme} />
         </Box>
         <Footer />
