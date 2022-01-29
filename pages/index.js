@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Container, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
-import SelectionCard from "../components/index/SelectionCard";
+import SelectionCard from "../components/SelectionCard";
 
 export default function Home() {
   const defaultDirection = ["column", "column", "row", "row", "row"];
