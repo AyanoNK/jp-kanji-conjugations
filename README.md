@@ -9,6 +9,7 @@ This is a project to practice kanji conjugations to its various forms it can tak
 1. Implementation of the [Kanji Alive API](https://rapidapi.com/KanjiAlive/api/learn-to-read-and-write-japanese-kanji) to get results on kanji meanings.
 2. Implementation of [Fauna](https://fauna.com/) and [FaunaDB](https://www.fauna.com/fauna/db) for storing conjugations, which aren't available at Kanji Alive.
 3. Form implementation.
+4. [This might be interesting](https://kanjiapi.dev/#!/documentation)
 
 ---
 
