@@ -1,8 +1,8 @@
 import { Box, ChakraProvider, Flex } from "@chakra-ui/react";
 import theme from "../theme/theme";
 import Head from "next/head";
-import Header from "../components/Header.js";
-import Footer from "../components/Footer.js";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
