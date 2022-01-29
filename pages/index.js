@@ -9,7 +9,7 @@ export default function Home() {
     {
       id: 1,
       title: "辞書形式の練習",
-      description: "ニャ。",
+      description: "開発中で",
       link: "/dictionary-form/test",
     },
     {
