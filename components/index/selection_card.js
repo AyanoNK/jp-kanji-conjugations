@@ -9,7 +9,6 @@ const SelectionCard = ({ link, title, description, isExternal = false }) => {
         border="1px solid black"
         borderRadius="md"
         padding="1.5rem"
-        width="50%"
         textDecoration="none"
         transition={["ease-in-out", "0.15s"]}
         _hover={{
@@ -21,7 +20,7 @@ const SelectionCard = ({ link, title, description, isExternal = false }) => {
         <Text paddingBottom="1rem" fontSize="1.5rem">
           {title}
         </Text>
-        <Text margin="0" padding="0" fontSize="1.25rem" lineHeight="1.5">
+        <Text margin="0" padding="0" fontSize="1.25rem" lineHeight="1.5rem">
           {description}
         </Text>
       </Link>
