@@ -1,7 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import { Box, Container, Grid, SimpleGrid, Stack } from "@chakra-ui/react";
+import { Container, SimpleGrid, Text } from "@chakra-ui/react";
 import SelectionCard from "../components/index/selection_card";
 
 export default function Home() {
@@ -41,14 +39,20 @@ export default function Home() {
         <meta name="description" content="日本語の漢字練習" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
+      <main>
         <Container
           maxW={["sm", "md", "lg", "xl", "3xl"]}
           flexDirection={defaultDirection}
         >
           <SimpleGrid columns={1} spacingY="3rem" autoColumns>
-            <h1 className={styles.title}>日本語の漢字練習</h1>
+            <Text
+              margin="0"
+              lineHeight="1.15"
+              fontSize="4rem"
+              textAlign="center"
+            >
+              日本語の漢字練習
+            </Text>
 
             <SimpleGrid
               columns={[1, 1, 2, 2, 2]}
