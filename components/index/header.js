@@ -19,6 +19,8 @@ const Header = (props) => {
       h="10vh"
       bg="teal.500"
       color="white"
+      position="sticky"
+      top="0"
       {...props}
     >
       <Flex align="center" mr={5}>

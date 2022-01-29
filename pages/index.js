@@ -50,7 +50,12 @@ export default function Home() {
           <SimpleGrid columns={1} spacingY="3rem" autoColumns>
             <h1 className={styles.title}>日本語の漢字練習</h1>
 
-            <SimpleGrid columns={2} spacingX="1rem" spacingY="2rem" autoRows>
+            <SimpleGrid
+              columns={[1, 1, 2, 2, 2]}
+              spacingX="1rem"
+              spacingY="2rem"
+              autoRows
+            >
               {cards.map((indexCard) => (
                 <SelectionCard
                   key={indexCard.id}
