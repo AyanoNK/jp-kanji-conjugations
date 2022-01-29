@@ -1,13 +1,5 @@
 import NextLink from "next/link";
-import {
-  Box,
-  extendTheme,
-  Link,
-  Stack,
-  StackItem,
-  StylesProvider,
-} from "@chakra-ui/react";
-import styles from "../styles/Footer.module.css";
+import { Box, Link, Stack, StackItem } from "@chakra-ui/react";
 
 const Footer = () => {
   const rows = [
@@ -39,12 +31,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className={styles.footer}>
+    <footer>
       <Box
         w="100%"
         display="flex"
         justifyContent="center"
         alignItems="center"
+        borderTop="1px solid #eaeaea"
+        top="0"
         flexDirection={["column", "column", "row", "row", "row"]}
       >
         <Stack

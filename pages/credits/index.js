@@ -47,10 +47,22 @@ export default function FirstPost() {
         },
       ],
     },
+    {
+      id: "3",
+      item: "Chakra UI",
+      who: "chakra-ui",
+      links: [
+        {
+          id: "3.1",
+          title: "Website",
+          url: "https://chakra-ui.com/",
+        },
+      ],
+    },
   ];
 
   return (
-    <Container maxW="6xl">
+    <Container maxW="6xl" minH="3xl">
       <VStack pt={5} spacing={5} align="stretch">
         <StackItem>
           <Heading
@@ -59,7 +71,7 @@ export default function FirstPost() {
             letterSpacing={"tighter"}
             flexDirection="column"
           >
-            Credits
+            With the wonderful help of
           </Heading>
         </StackItem>
         <StackItem>

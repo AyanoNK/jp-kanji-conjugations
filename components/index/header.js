@@ -16,16 +16,17 @@ const Header = (props) => {
       justify="space-between"
       wrap="wrap"
       padding={3}
-      h="10vh"
       bg="teal.500"
       color="white"
+      position="sticky"
+      top="0"
       {...props}
     >
       <Flex align="center" mr={5}>
         <Heading as="h1" size="lg" letterSpacing={"tighter"}>
           <NextLink href="/" passHref>
             <Link>
-              <Image src="/logo.webp" h="2.5em" alt="Dan Abramov" />
+              <Image src="/logo.webp" h="1.5em" alt="Dan Abramov" />
             </Link>
           </NextLink>
         </Heading>
