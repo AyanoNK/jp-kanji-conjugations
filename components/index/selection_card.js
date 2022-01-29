@@ -5,15 +5,14 @@ const SelectionCard = ({ link, title, description, isExternal = false }) => {
   return (
     <NextLink href={link} passHref>
       <Link
-        // TODO: change color to use theme
         border="1px solid black"
         borderRadius="md"
         padding="1.5rem"
         textDecoration="none"
         transition={["ease-in-out", "0.15s"]}
         _hover={{
-          color: "red.500",
-          borderColor: "red.500",
+          color: "blue.700",
+          borderColor: "blue.700",
         }}
         isExternal={isExternal}
       >

@@ -5,7 +5,7 @@ import Header from "./header";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Header />
       <Box display="flex" minHeight="90vh">
         <Component {...pageProps} theme={theme} />
