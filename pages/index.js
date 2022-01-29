@@ -10,7 +10,7 @@ export default function Home() {
       id: 1,
       title: "開発中で",
       description: "ニャ。",
-      link: "/posts/first-post",
+      link: "/dictionary-form/test",
     },
     {
       id: 2,
@@ -34,11 +34,6 @@ export default function Home() {
 
   return (
     <Container maxW="8xl">
-      <Head>
-        <title>漢字練習</title>
-        <meta name="description" content="日本語の漢字練習" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main>
         <Container
           maxW={["sm", "md", "lg", "xl", "3xl"]}
