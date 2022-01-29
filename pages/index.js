@@ -1,10 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Container, Grid, SimpleGrid, Stack } from "@chakra-ui/react";
 import SelectionCard from "../components/index/selection_card";
 
 export default function Home() {
+  const defaultDirection = ["column", "column", "row", "row", "row"];
   return (
     <Container maxW="8xl">
       <Head>
@@ -14,7 +15,38 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>日本語の漢字練習</h1>
+        <Container
+          maxW={["sm", "md", "lg", "xl", "3xl"]}
+          backgroundColor={"red"}
+          flexDirection={defaultDirection}
+        >
+          <SimpleGrid columns={1} spacingY="3rem" autoColumns>
+            <h1 className={styles.title}>日本語の漢字練習</h1>
+
+            <SimpleGrid columns={2} spacingX="1rem" spacingY="2rem" autoRows>
+              <SelectionCard
+                link="/posts/first-post"
+                title="開発中で"
+                description="ニャ。2"
+              />
+              <SelectionCard
+                link="/posts/first-post"
+                title="開発中で"
+                description="ニャ。2"
+              />
+              <SelectionCard
+                link="/posts/first-post"
+                title="開発中で"
+                description="ニャ。2"
+              />
+              <SelectionCard
+                link="/posts/first-post"
+                title="開発中で"
+                description="ニャ。2"
+              />
+            </SimpleGrid>
+          </SimpleGrid>
+        </Container>
 
         <div className={styles.grid}>
           <SelectionCard
