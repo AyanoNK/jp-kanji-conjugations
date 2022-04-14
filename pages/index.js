@@ -16,19 +16,19 @@ export default function Home() {
       id: 2,
       title: "開発中で",
       description: "ニャ。",
-      link: "/posts/first-post",
+      link: "/",
     },
     {
       id: 3,
       title: "開発中で",
       description: "ニャ。",
-      link: "/posts/first-post",
+      link: "/",
     },
     {
       id: 4,
-      title: "開発中で",
-      description: "ニャ。",
-      link: "/posts/first-post",
+      title: "資力",
+      description: "練習の為に",
+      link: "/resources",
     },
   ];
 

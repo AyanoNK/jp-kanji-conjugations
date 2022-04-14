@@ -44,7 +44,7 @@ export default function Home() {
             </Text>
             <ArrowBackIcon color="green.500" fontSize="4rem" />
             <ArrowForwardIcon color="green.500" fontSize="4rem" />
-            <Tooltip label="「じしょ けいしき の れんしゅう」" placement="top">
+            <Tooltip label="「じしょ けいしき」" placement="top">
               <Text
                 margin="0"
                 lineHeight="1.15"
